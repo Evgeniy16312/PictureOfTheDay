@@ -3,13 +3,13 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
-        <item name="colorOnPrimary">#FFFFFF</item>
-        <item name="colorSecondary">@color/colorAccent</item>
-        <item name="colorSecondaryVariant">#0039CB</item>
-        <item name="colorOnSecondary">#FFFFFF</item>
-        <item name="colorError">#F44336</item>
+        <item name="colorPrimary">#FF0000</item>
+        <item name="colorPrimaryVariant">#001755</item>
+        <item name="colorOnPrimary">@color/color_gray</item>
+        <item name="colorSecondary">#02F640</item>
+        <item name="colorSecondaryVariant">#666971</item>
+        <item name="colorOnSecondary">#9A9393</item>
+        <item name="colorError">#FF1100</item>
         <item name="colorOnError">#FFFFFF</item>
         <item name="colorSurface">#FFFFFF</item>
         <item name="colorOnSurface">#212121</item>
