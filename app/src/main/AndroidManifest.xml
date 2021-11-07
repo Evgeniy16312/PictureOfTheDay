@@ -19,6 +19,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".ui.api.ApiActivity"/>
+        <activity android:name=".ui.AnimationsActivity"/>
+        <activity android:name=".AnimationsActivityBonus"/>
         <activity android:name=".ui.apibottom.ApiBottomActivity"/>
     </application>
 
