@@ -11,6 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity
+            android:name=".ui.recycler.RecyclerActivity"
+            android:exported="false" />
         <activity android:name=".ui.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,10 +21,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.api.ApiActivity"/>
-        <activity android:name=".ui.AnimationsActivity"/>
-        <activity android:name=".AnimationsActivityBonus"/>
-        <activity android:name=".ui.apibottom.ApiBottomActivity"/>
+        <activity android:name=".ui.api.ApiActivity" />
+        <activity android:name=".ui.AnimationsActivity" />
+        <activity android:name=".AnimationsActivityBonus" />
+        <activity android:name=".ui.apibottom.ApiBottomActivity" />
     </application>
 
 </manifest>
