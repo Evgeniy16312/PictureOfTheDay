@@ -1,6 +1,7 @@
 package geekbarains.material.ui.picture
 
 import android.content.Intent
+import android.graphics.Typeface
 import android.net.Uri
 import android.os.Bundle
 import android.view.*
@@ -18,6 +19,7 @@ import geekbarains.material.ui.MainActivity
 import geekbarains.material.ui.api.ApiActivity
 import geekbarains.material.ui.apibottom.ApiBottomActivity
 import geekbarains.material.ui.settings.SettingsFragment
+import kotlinx.android.synthetic.main.fragment_main_explanation_text.*
 import kotlinx.android.synthetic.main.main_fragment.*
 
 class PictureOfTheDayFragment : Fragment() {
@@ -48,6 +50,9 @@ class PictureOfTheDayFragment : Fragment() {
                 data = Uri.parse("https://en.wikipedia.org/wiki/${input_edit_text.text.toString()}")
             })
         }
+        activity?.let {
+            text_view.typeface = Typeface.createFromAsset(it.assets, "SeratUltra.ttf")
+        }
         setBottomAppBar(view)
     }
 
@@ -76,6 +81,7 @@ class PictureOfTheDayFragment : Fragment() {
             is PictureOfTheDayData.Success -> {
                 val serverResponseData = data.serverResponseData
                 val url = serverResponseData.url
+
                 if (url.isNullOrEmpty()) {
                     //showError("Сообщение, что ссылка пустая")
                     toast("Link is empty")
@@ -86,6 +92,9 @@ class PictureOfTheDayFragment : Fragment() {
                         error(R.drawable.ic_load_error_vector)
                         placeholder(R.drawable.ic_no_photo_vector)
                     }
+                }
+                serverResponseData.explanation?.let {
+                    text_view.text = it
                 }
             }
             is PictureOfTheDayData.Loading -> {

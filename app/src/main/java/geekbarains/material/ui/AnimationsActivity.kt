@@ -9,6 +9,7 @@ import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import geekbarains.material.R
+import geekbarains.material.SpansFragment
 import kotlinx.android.synthetic.main.activity_animations_enlarge.*
 import kotlinx.android.synthetic.main.activity_animations_fab.*
 
@@ -78,8 +79,9 @@ class AnimationsActivity : AppCompatActivity() {
                 override fun onAnimationEnd(animation: Animator) {
                     option_one_container.isClickable = true
                     option_one_container.setOnClickListener {
-                        Toast.makeText(this@AnimationsActivity, "Option 1", Toast.LENGTH_SHORT)
-                            .show()
+                        supportFragmentManager.beginTransaction()
+                            .add(R.id.fragment_container_span, SpansFragment())
+                            .commit()
                     }
                 }
             })
