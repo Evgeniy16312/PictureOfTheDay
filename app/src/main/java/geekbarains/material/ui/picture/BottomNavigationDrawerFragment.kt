@@ -11,6 +11,7 @@ import geekbarains.material.AnimationsActivityBonus
 import geekbarains.material.R
 import geekbarains.material.ui.AnimationsActivity
 import geekbarains.material.ui.apibottom.ApiBottomActivity
+import geekbarains.material.ui.recycler.RecyclerActivity
 import kotlinx.android.synthetic.main.bottom_navigation_layout.*
 
 class BottomNavigationDrawerFragment : BottomSheetDialogFragment() {
@@ -30,7 +31,9 @@ class BottomNavigationDrawerFragment : BottomSheetDialogFragment() {
             when (menuItem.itemId) {
                 R.id.navigation_one -> activity?.let { startActivity(Intent(it, AnimationsActivity::class.java)) }
                 R.id.navigation_two -> activity?.let { startActivity(Intent(it, AnimationsActivityBonus::class.java)) }
+                R.id.navigation_three -> activity?.let { startActivity(Intent(it, RecyclerActivity::class.java)) }
             }
+            dismiss()
             true
         }
     }

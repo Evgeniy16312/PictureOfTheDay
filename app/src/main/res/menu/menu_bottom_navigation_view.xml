@@ -2,7 +2,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/bottom_view_earth"
-        android:icon="@drawable/earth"
+        android:icon="@drawable/world"
         android:title="Earth" />
 
     <item
