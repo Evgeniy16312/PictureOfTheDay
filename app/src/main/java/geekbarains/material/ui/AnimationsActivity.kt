@@ -79,9 +79,8 @@ class AnimationsActivity : AppCompatActivity() {
                 override fun onAnimationEnd(animation: Animator) {
                     option_one_container.isClickable = true
                     option_one_container.setOnClickListener {
-                        supportFragmentManager.beginTransaction()
-                            .add(R.id.fragment_container_span, SpansFragment())
-                            .commit()
+                        Toast.makeText(this@AnimationsActivity, "Option 1", Toast.LENGTH_SHORT)
+                            .show()
                     }
                 }
             })
