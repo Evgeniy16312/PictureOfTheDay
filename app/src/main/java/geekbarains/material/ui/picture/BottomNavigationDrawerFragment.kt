@@ -6,7 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
-import geekbarains.material.AnimationsActivityBonus
+import geekbarains.material.ui.AnimationsActivityBonus
 import geekbarains.material.R
 import geekbarains.material.ui.AnimationsActivity
 import geekbarains.material.ui.recycler.RecyclerActivity

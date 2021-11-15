@@ -20,6 +20,10 @@
         <item name="materialCardViewStyle">@style/AppCard</item>
     </style>
 
+    <style name="AppTheme.Splash">
+        <item name="android:windowBackground">@drawable/splash_background_drawable</item>
+    </style>
+
     <style name="AppButton" parent="Widget.MaterialComponents.Button">
         <item name="backgroundTint">?attr/colorSecondary</item>
     </style>
