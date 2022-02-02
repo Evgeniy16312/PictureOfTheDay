@@ -1,4 +1,4 @@
-package geekbarains.material
+package geekbarains.material.ui
 
 import android.os.Bundle
 import android.view.animation.AnticipateOvershootInterpolator
@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintSet
 import androidx.transition.ChangeBounds
 import androidx.transition.TransitionManager
+import geekbarains.material.R
 import kotlinx.android.synthetic.main.activity_animations_bonus_end.backgroundImage
 import kotlinx.android.synthetic.main.activity_animations_bonus_start.*
 
