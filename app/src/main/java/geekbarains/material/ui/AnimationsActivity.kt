@@ -9,6 +9,7 @@ import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import geekbarains.material.R
+import geekbarains.material.SpansFragment
 import kotlinx.android.synthetic.main.activity_animations_enlarge.*
 import kotlinx.android.synthetic.main.activity_animations_fab.*
 
