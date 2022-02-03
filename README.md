@@ -24,4 +24,4 @@ This application visually shows all possible features with material design.
 ## Screenshots
 
 Main screen | Recycler 
----|---
+![matDesign1](https://user-images.githubusercontent.com/84197411/152339453-06988c6b-bd4d-48c1-affd-22b454660cda.png)|---
